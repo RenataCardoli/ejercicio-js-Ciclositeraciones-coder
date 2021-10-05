@@ -1,10 +1,12 @@
-var texto = prompt("Ingrese un texto");
-var resultado = texto;
+let sum = 0;
 
-var textoConcatenar =" ";
+while (true) {
 
-while (textoConcatenar != 3 ){
-    textoConcatenar = prompt("ingrese otro texto");
-    resultado = resultado + " " + textoConcatenar;
-    console.log(resultado);
+let value = +prompt("Ingresa un número", '');
+
+if (!value) break; // (*)
+
+sum += value;
+
 }
+alert( 'Suma: ' + sum );
